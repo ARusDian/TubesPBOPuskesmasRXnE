@@ -1,0 +1,13 @@
+Struk Obat
+Nama Obat ==> Vitacimin
+Kandungan ==> 500g Vitamin C
+Aturan Pakai ==> Sekali Sehari
+Efek Samping ==> Mati
+Tipe ==> Ringan
+Harga ==> 5000
+Jumlah ==> 3
+
+
+
+
+Total ==> Rp.15000

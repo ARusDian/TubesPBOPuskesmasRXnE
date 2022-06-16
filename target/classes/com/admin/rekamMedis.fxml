@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.admin.RekamMedisController">
+   <children>
+      <BorderPane layoutX="-1.0" layoutY="7.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="85.0" prefWidth="1200.0" style="-fx-background-color: #6183a6;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="250.0">
+                     <children>
+                        <Label fx:id="labelTitle" alignment="CENTER" prefHeight="78.0" prefWidth="265.0" text="PUSKESMAS" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="85.0" prefWidth="418.0" />
+                  <HBox prefHeight="85.0" prefWidth="588.0" />
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#Logout" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: RED;" text="LOGOUT">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" top="18.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="630.0" prefWidth="259.0" style="-fx-background-color: #72aae4;" BorderPane.alignment="CENTER">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="630.0" prefWidth="259.0" style="-fx-background-color: #72aae4;">
+                     <children>
+                        <VBox prefHeight="630.0" prefWidth="259.0" style="-fx-background-color: #72aae4;">
+                           <children>
+                              <HBox prefHeight="88.0" prefWidth="259.0">
+                                 <children>
+                                    <Button fx:id="btnDataPengguna" mnemonicParsing="false" onAction="#switchToDataPengguna" prefHeight="91.0" prefWidth="265.0" style="-fx-background-color: #72AAE4; -fx-text-fill: white; -fx-font-weight: Bold;" text="Data Pengguna">
+                                       <font>
+                                          <Font name="Cambria" size="23.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="83.0" prefWidth="259.0">
+                                 <children>
+                                    <Button fx:id="btnDataRiwayat" mnemonicParsing="false" onAction="#switchToDataRiwayat" prefHeight="91.0" prefWidth="265.0" style="-fx-background-color: #72AAE4; -fx-text-fill: white; -fx-font-weight: Bold;" text="Data Riwayat">
+                                       <font>
+                                          <Font name="Cambria" size="24.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="88.0" prefWidth="259.0">
+                                 <children>
+                                    <Button fx:id="btnObat" mnemonicParsing="false" onAction="#switchToDataObat" prefHeight="104.0" prefWidth="260.0" style="-fx-background-color: #72AAE4; -fx-text-fill: white; -fx-font-weight: Bold;" text="Data Obat">
+                                       <font>
+                                          <Font name="Cambria" size="24.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="88.0" prefWidth="259.0">
+                                 <children>
+                                    <Button fx:id="btnBerita" mnemonicParsing="false" onAction="#switchToDataBerita" prefHeight="91.0" prefWidth="265.0" style="-fx-background-color: #72AAE4; -fx-text-fill: white; -fx-font-weight: Bold;" text="Berita">
+                                       <font>
+                                          <Font name="Cambria" size="24.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1200.0">
+                     <children>
+                        <VBox prefHeight="741.0" prefWidth="1202.0" style="-fx-background-color: #72AAE4;">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                              <HBox prefHeight="926.0" prefWidth="1202.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <AnchorPane prefHeight="742.0" prefWidth="1225.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" layoutX="79.0" layoutY="13.0" prefHeight="313.0" prefWidth="225.0" spacing="30.0">
+                                             <children>
+                                                <Label text="ID">
+                                                   <font>
+                                                      <Font name="Arial" size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Diagnosa awal">
+                                                   <font>
+                                                      <Font name="Arial" size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Diagnosa akhir">
+                                                   <font>
+                                                      <Font name="Arial" size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Tindakan">
+                                                   <font>
+                                                      <Font name="Arial" size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="ID Pasien">
+                                                   <font>
+                                                      <Font name="Arial" size="25.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="339.0" layoutY="27.0" prefHeight="303.0" prefWidth="288.0" spacing="18.0">
+                                             <children>
+                                                <TextField fx:id="textfield_id" prefHeight="44.0" prefWidth="288.0" />
+                                                <TextField fx:id="textfield_diagnosaAwal" prefHeight="44.0" prefWidth="271.0" />
+                                                <TextField fx:id="textfield_diagnosaAkhir" prefHeight="44.0" prefWidth="271.0" />
+                                                <TextField fx:id="textfield_tindakan" prefHeight="44.0" prefWidth="252.0" />
+                                                <TextField fx:id="textfield_IDpasien" prefHeight="44.0" prefWidth="271.0" />
+                                             </children>
+                                          </VBox>
+                                          <TableView fx:id="tabel_rekamMedis" layoutX="13.0" layoutY="368.0" prefHeight="360.0" prefWidth="1181.0">
+                                            <columns>
+                                              <TableColumn fx:id="tabel_id" prefWidth="87.333251953125" text="ID" />
+                                              <TableColumn fx:id="tabel_diagnosaAwal" prefWidth="176.00006103515625" text="Diagnosa Awal" />
+                                                <TableColumn fx:id="tabel_diagnosaAkhir" prefWidth="190.0" text="Diagnosa Akhir" />
+                                                <TableColumn fx:id="tabel_tindakan" prefWidth="173.77780151367188" text="Tindakan" />
+                                                <TableColumn fx:id="tabel_IDpasien" prefWidth="175.7777099609375" text="ID Pasien" />
+                                                <TableColumn fx:id="tabel_IDdokter" prefWidth="212.66656494140625" text="ID Dokter" />
+                                                <TableColumn fx:id="tabel_ListObat" prefWidth="163.3333740234375" text="List Obat" />
+                                            </columns>
+                                          </TableView>
+                                          <VBox layoutX="845.0" layoutY="35.0" prefHeight="179.0" prefWidth="311.0" spacing="18.0">
+                                             <children>
+                                                <TextField fx:id="textfield_IDdokter" prefHeight="44.0" prefWidth="288.0" />
+                                                <TextField fx:id="textfield_listobat" prefHeight="44.0" prefWidth="271.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER_LEFT" layoutX="707.0" layoutY="-2.0" prefHeight="173.0" prefWidth="147.0" spacing="30.0">
+                                             <children>
+                                                <Label text="ID Dokter">
+                                                   <font>
+                                                      <Font name="Arial" size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="List Obat">
+                                                   <font>
+                                                      <Font name="Arial" size="25.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Button fx:id="tombol_insert" layoutX="710.0" layoutY="238.0" mnemonicParsing="false" onAction="#Insert" prefHeight="84.0" prefWidth="175.0" style="-fx-background-color: #6183A6;" text="Insert" textFill="#f8f8f8">
+                                             <font>
+                                                <Font name="AmdtSymbols" size="21.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="tombol_update" layoutX="889.0" layoutY="238.0" mnemonicParsing="false" onAction="#Edit" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: #72AAE4;" text="Update" textFill="#f8f8f8">
+                                             <font>
+                                                <Font name="Arial" size="21.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="tombol_delete" layoutX="890.0" layoutY="280.0" mnemonicParsing="false" onAction="#Delete" prefHeight="41.0" prefWidth="131.0" style="-fx-background-color: #72AAE4;" text="Delete" textFill="#f8f8f8">
+                                             <font>
+                                                <Font name="Arial" size="21.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="tombol_refresh" layoutX="1024.0" layoutY="238.0" mnemonicParsing="false" onAction="#Refresh" prefHeight="41.0" prefWidth="128.0" style="-fx-background-color: #6183A6;" text="Refresh" textFill="#f8f8f8">
+                                             <font>
+                                                <Font name="Arial" size="21.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="tombol_pilih" layoutX="1024.0" layoutY="281.0" mnemonicParsing="false" onAction="#Pilih" prefHeight="41.0" prefWidth="128.0" style="-fx-background-color: #72AAE4;" text="Pilih" textFill="#f8f8f8">
+                                             <font>
+                                                <Font name="Arial" size="21.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
