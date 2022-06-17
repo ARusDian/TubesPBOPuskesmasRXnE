@@ -12,6 +12,7 @@ public abstract class Controller implements Initializable {
     protected Stage stage;
     protected Scene scene;
 
+
     public void Show() {};
 
     @FXML

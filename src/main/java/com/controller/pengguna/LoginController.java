@@ -67,15 +67,7 @@ public class LoginController {
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
-
-
-
         }else {
-            Parent root = FXMLLoader.load(new URL("file:/D:/Java/BelajarJava/Kuliah/RuxneKesMas/target/classes/com/pengguna/home.fxml"));
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
             System.out.println("error");
         }
     }

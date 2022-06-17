@@ -5,9 +5,9 @@ Aturan Pakai ==> Sekali Sehari
 Efek Samping ==> Mati
 Tipe ==> Ringan
 Harga ==> 5000
-Jumlah ==> 3
+Jumlah ==> 4
 
 
 
 
-Total ==> Rp.15000
+Total ==> Rp.20000
